@@ -1,7 +1,7 @@
 const { Pool } = require('pg');
 
 const pool = new Pool({
-    connectionString: `postgresql://neondb_owner:Xtw5YmhNA7ld@ep-sparkling-credit-a5ey2odc.us-east-2.aws.neon.tech/neondb?sslmode=require`,
+    connectionString: `postgresql://neondb_owner:Xtw5YmhNA7ld@ep-sparkling-credit-a5ey2odc-pooler.us-east-2.aws.neon.tech/neondb?sslmode=require`,
 });
 
 module.exports = pool;

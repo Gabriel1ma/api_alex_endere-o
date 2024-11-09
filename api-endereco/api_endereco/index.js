@@ -1,4 +1,4 @@
-//require('dotenv').config()
+require('dotenv').config()
 
 const express = require('express');
 const app = express();
@@ -9,7 +9,11 @@ app.use(cors()); // Habilita CORS para todas as rotas
 
 app.use(express.json())
 
-app.use('/api/users', useRoutes)
+app.use('/api/endereco', useRoutes)
+
+app.get('/ping', (req, res) => {
+    res.send('Pong!');
+  });
 
 const PORT = process.env.PORT || 8000
 app.listen(PORT, () => {

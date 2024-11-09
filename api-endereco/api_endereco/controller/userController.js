@@ -2,7 +2,7 @@ const pool = require('../config/db');
 
 // Cria um novo usuário
 exports.createUser = async (req, res) => {
-  const { name, document, email, birthday } = req.body;
+  const { rua, bairro, cidade, estado } = req.body;
 
   try {
     const result = await pool.query(
